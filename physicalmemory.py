@@ -1,6 +1,6 @@
 import psutil
 
-psutil.cpu_percent(5)
+psutil.cpu_percent(4)
 print('The CPU usage is: ', psutil.cpu_percent(4))
 
 psutil.virtual_memory()
