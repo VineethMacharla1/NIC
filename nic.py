@@ -2,7 +2,7 @@ import subprocess
 import re
 
 cmd = "wmic nic get AdapterType, Name, Installed, MACAddress, GUID, Manufacturer, Availability, NetConnectionID, PowerManagementSupported, Speed."
-
+#cmd = "ipconfig"
 p1 = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
 out, err = p1.communicate()
 
